@@ -1,0 +1,127 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: lightblue;
+}
+#container {
+  width: 1000px;
+  height: 550px;
+  margin: 20px auto;
+}
+#calculator {
+  width: 320px;
+  height: 520px;
+  background-color: rgba(58, 70, 85);
+  margin: 0 auto;
+  top: 20px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#result {
+  height: 120px;
+}
+#history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #919191;
+}
+#output {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* text-align: right; */
+  height: 60px;
+  margin: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+#output-value {
+  font-size: 30px;
+  color: rgb(225, 219, 212);
+}
+.number,
+.operator,
+.empty {
+  border: 1px solid rgb(132, 152, 161);
+}
+#keyboard {
+  height: 400px;
+  display: inline-grid;
+
+  grid-template-columns: 80px repeat(2, 80px) 80px;
+}
+/* .operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+} */
+.number,
+.empty {
+  /* background-color: #eaedef; */
+}
+.number,
+.operator {
+  color: white;
+  cursor: pointer;
+}
+.operator:active,
+.number:active {
+  font-size: 20px;
+}
+
+.operator:active,
+.operator:hover,
+.number:active,
+.number:hover {
+  background-color: grey;
+}
+
+.operator:focus,
+.number:focus,
+.empty:focus {
+  outline: 0;
+}
+button {
+  font-size: 20px;
+  background-color: rgba(58, 70, 85);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+button:nth-child(1) {
+  font-size: 20px;
+  color: rgb(124, 81, 83);
+}
+button:nth-child(4) {
+  color: rgb(111, 116, 119);
+}
+button:nth-child(3) {
+  color: rgb(111, 116, 119);
+}
+button:nth-child(8) {
+  color: rgb(111, 116, 119);
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+button:nth-child(12) {
+  color: rgb(111, 116, 119);
+  font-size: 30px;
+}
+button:nth-child(16) {
+  color: rgb(111, 116, 119);
+  font-size: 30px;
+}
+button:nth-child(20) {
+  color: rgb(111, 116, 119);
+  font-size: 30px;
+}
